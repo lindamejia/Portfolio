@@ -1,0 +1,94 @@
+
+@font-face {
+  font-family: 'ubuntu';
+  font-style: italic;
+  font-weight: 300;
+  src: local("Lato Light Italic"), local("Lato-LightItalic"), url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2) format("woff2"); }
+
+.wrapper {
+	/* position: absolute; */
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	background-color: transparent;
+  background-image: linear-gradient(0deg,white,rgb(145, 187, 211));
+	*background-image: url('http://sxrdev.com/uploads/images/code.png');
+  background-size: 100%;
+
+}
+
+.heading{
+  margin-left: 25%;
+}
+
+.title {
+    color: #fff;
+  font-size: 90px;
+  line-height: 1;
+      font-family: 'ubuntu';
+  background: linear-gradient(to right,rgb(239, 244, 247) 10% #a9c0ce ,#fff 50%,#c7d9e2 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3.5s linear infinite;
+  display: inline-block;
+ 
+  }
+
+  .title1 {
+    color: #fff;
+  font-size: 80px;
+  line-height: 1;
+      font-family: 'ubuntu';
+margin-top: 130px;
+  background: linear-gradient(to right,rgb(239, 244, 247) 10% #a9c0ce ,#fff 50%,#c7d9e2 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3.5s linear infinite;
+  display: inline-block;
+  }
+
+  .subheading{
+    margin-top: 200px;
+    text-align: center;
+  }
+
+  .subtitle{
+    color:#455661;
+    line-height: 1;
+      font-family: 'ubuntu';
+      text-transform: uppercase;
+  }
+
+@keyframes textclip {
+ to {
+  background-position:200% center
+ }
+}
+
+.hr {
+  line-height: 5.3;
+  max-width: 100px;
+  margin: 45px auto;
+  border-width: 4px;
+  border-color: #455661;
+}
+
+.image{
+  height:50px;
+  width:auto;
+  margin:30px;
+  text-align:center;
+}
+

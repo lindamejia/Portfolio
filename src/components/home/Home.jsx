@@ -10,15 +10,42 @@ export default class Home extends Component {
       }
     };
     this.END_POINT =
-      "/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
+      "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
   }
 
   componentDidMount() {
     this.getRandomQuote();
   }
 
+  // getRandomQuote = () => {
+  //   fetch(this.END_POINT, {
+  //     // mode: "no-cors",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       "Access-Control-Allow-Origin": "*",
+  //       Accept: "application/json"
+  //     }
+  //   })
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       if (data[0].content) {
+  //         let { quote } = this.state;
+  //         quote.content = data[0].content;
+
+  //         this.setState({ quote });
+  //       } else {
+  //         return console.error("No quote has been found 404");
+  //       }
+  //     });
+  // };
+
   getRandomQuote = () => {
-    fetch(this.END_POINT)
+    fetch(this.END_POINT, {
+      // mode: "no-cors",
+      header: {
+        "Access-Control-Allow-Origin": "*"
+      }
+    })
       .then(response => response.json())
       .then(data => {
         if (data[0].content) {

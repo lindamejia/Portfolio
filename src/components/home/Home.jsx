@@ -10,7 +10,7 @@ export default class Home extends Component {
       }
     };
     this.END_POINT =
-      "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
+      "/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
   }
 
   componentDidMount() {

@@ -14,6 +14,7 @@ class App extends Component {
       <div>
         <NavBar />
         <Socials2 />
+
         <Route exact path="/" render={props => <Home {...props} />} />
         <Route exact path="/aboutme" render={props => <AboutMe {...props} />} />
         <Route

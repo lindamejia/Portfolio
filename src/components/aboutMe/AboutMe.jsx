@@ -6,7 +6,7 @@ import Linda from "./LindaMejia.jpg";
 class AboutMe extends Component {
   render() {
     return (
-      <div>
+      <div className="container-fluid">
         <h1 className={`container ${style.heading}`}>About Me</h1>
 
         <img src={Linda} alt="me" className={style.background} />
@@ -16,12 +16,12 @@ class AboutMe extends Component {
         <div className={`container col-md-3 col-xs-10 ${style.p}`}>
           <p>
             I’m a{" "}
-            <span style={{ fontWeight: "bold" }}>full stack web developer</span>
-            , photography aficionado, self-proclaimed content creator, and a
-            stereotype challenger.
+            <span style={{ fontWeight: "bold" }}>front-end developer</span>,
+            photography aficionado, lifelong learner, and a stereotype
+            challenger.
           </p>
           <p>
-            I love learning new technologies, traveling, watching Shark Tank,
+            I love studying new technologies, traveling, watching Shark Tank,
             dog sitting for my friends, and cooking plant-based meals.
           </p>
           <p>
@@ -35,9 +35,9 @@ class AboutMe extends Component {
           </p>
           <p>
             Since beginning my journey as a{" "}
-            <span style={{ fontWeight: "bold" }}>front-end developer</span>,
-            I've collaborated with talented and knowledgable people to create
-            some pretty cool web apps. <br />
+            <span style={{ fontWeight: "bold" }}>developer</span>, I've
+            collaborated with talented and knowledgable people to create some
+            pretty cool web apps. <br />
             <a href="/portfolio" className={style.link}>
               {" "}
               <span>

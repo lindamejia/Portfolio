@@ -1,11 +1,44 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import style from "./Experience.module.css";
+import maca from "./maca.png";
+import outlayr from "./outlayr.png";
+import crowley from "./crowley.png";
 
 class Experience extends Component {
   render() {
     return (
-      <div className={style.background}>
+      <div>
+        <Container style={{ marginBottom: "3%" }}>
+          <Row>
+            <Col className={`col-md-3 col-xs-10 ${style.box}`}>
+              <a href="https://www.crowleystrategy.com/" target="_blank">
+                <img src={crowley} alt="crowley" className={style.image} />
+                <div className={style.overlay}>
+                  <div className={style.text}>
+                    Crowley Corporate Legal Strategy
+                  </div>
+                </div>
+              </a>
+            </Col>
+            <Col className={`col-md-3 col-xs-10 offset-1 ${style.box}`}>
+              <a href="https://outlayr.azurewebsites.net/" target="_blank">
+                <img src={outlayr} alt="outlayr" className={style.image} />
+                <div className={style.overlay}>
+                  <div className={style.text}>Outlayr</div>
+                </div>
+              </a>
+            </Col>
+            <Col className={`col-md-3 col-xs-10 offset-1 ${style.box}`}>
+              <a href="/maca" target="_blank">
+                <img src={maca} alt="maca" className={style.image} />
+                <div className={style.overlay}>
+                  <div className={style.text}>Maca Media</div>
+                </div>
+              </a>
+            </Col>
+          </Row>
+        </Container>
         <Container className={style.container}>
           <Row>
             <Col className={style.col}>

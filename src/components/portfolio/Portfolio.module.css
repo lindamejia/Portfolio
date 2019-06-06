@@ -1,0 +1,30 @@
+.portfolio{
+    text-align: left;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 4%;
+    padding-top:5%;
+    margin-left: 10%;
+    color:white;
+}
+
+.heading{
+    margin-top:35%;
+    text-align: center; 
+    font-family: "eurostile",sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For desktop: */
+  .portfolio{
+ margin-top:10%;
+ margin-left:15%;
+  }
+
+  .heading{
+      margin-top:65%;
+  }
+}

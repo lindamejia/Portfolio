@@ -1,0 +1,12 @@
+.image{
+    height:50px;
+    width:auto;
+    margin:30px;
+  }
+
+  .socials{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    margin-right:20px;
+  }

@@ -1,26 +1,109 @@
 .heading{
-    padding-top: 100px;
-    font-family: 'ubuntu';
-    text-align: center;
+    text-align: left;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 4%;
+    padding-top:5%
 }
 
-.image{
-    height:30%;
-    width: 50%;
-    border-radius: 5mm;
-    
+.background{
+    position: absolute;
+    right: 10%;
+    top: 18%;
+    z-index: -2;
+    object-fit:cover;
+    height: 80%;
+    width: 30%;
+    opacity: 0.8;
+    object-position: top;
 }
 
-.container{
-    padding-top:30px;
-    /* background-color: white; */
-    border-radius: 2mm;
-    text-align: center;
-    background-color: #a9c0ce;
-    color: white;
+.background:hover {  
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+
 
 .p{
-    font-family: 'ubuntu';
+  font-size: 18px; 
+  background: #3ba7ff;
+  color: white;
+  padding: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: 50%;
+  margin-right: 50%;
+  opacity:0.92;
+  text-align: center;
+
+}
+
+
+.image2{
+    position: absolute;
+    left:5%;
+    top: 0px;
+    z-index: -1;
+    height: 60%;
+    width:auto;
+    margin-top: 30%;
+    margin-left: 5%;
+    object-fit:cover;
+    opacity:0.8;
+}
+
+.image2:hover {  
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.p:hover {  
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.arrow{
+    font-size:30px;
     
 }
+
+.link{
+font-weight: "bold";
+color:white;
+
+}
+
+.link:hover{
+text-decoration: none;
+background: -webkit-linear-gradient(right, #33ccff, #ff99cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+@media only screen and (max-width: 768px) {
+    /* For desktop: */
+  .image2{
+      display:none;
+  }
+
+  .background{
+    display:none;
+}
+  .heading{
+      margin-top:10%;
+
+  }
+  }

@@ -10,7 +10,7 @@ export default class Home extends Component {
       }
     };
     this.END_POINT =
-      "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
+      "https://cors-everywhere.herokuapp.com/http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
   }
 
   componentDidMount() {
@@ -41,10 +41,12 @@ export default class Home extends Component {
 
   getRandomQuote = () => {
     fetch(this.END_POINT, {
+      method: "GET",
       // mode: "no-cors",
       header: {
         "Access-Control-Allow-Origin": "*"
-      }
+      },
+      credentials: "same-origin"
     })
       .then(response => response.json())
       .then(data => {

@@ -1,0 +1,60 @@
+.nav {
+    width: 88px;
+color:white;
+}
+
+.background{
+   
+    width: 88px;
+}
+
+.rotate{
+    position: absolute;
+    left: -196px;
+    width: 480px;
+    bottom:-180px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.navlink{
+      text-transform: uppercase;
+      text-align: right;
+      font-size: 14px;
+}
+
+
+.navlink:hover{
+    text-decoration: none;
+    background: -webkit-linear-gradient(right, #33ccff, #ff99cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.img{
+    height: 88px;
+    width:88px;
+    /* width:88px; */
+    vertical-align: middle;
+    display: inline-block;
+    background-color: black;
+    position: fixed;
+z-index: 10;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For desktop: */
+    .rotate{
+        position: absolute;
+        left: 20px;
+        width: 0;
+        bottom:-200px;
+        -webkit-transform: none;;
+        -ms-transform: none;
+        transform:none;
+    }
+  }
+
+
+

@@ -4,7 +4,7 @@ import style from "./Contact.module.css";
 class Contact extends Component {
   render() {
     return (
-      <div className={style.background}>
+      <div>
         <br />
         <h1 className={style.header}>Contact Me</h1>
         <div className="container-fluid">

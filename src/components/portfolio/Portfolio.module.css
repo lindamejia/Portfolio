@@ -1,23 +1,10 @@
 .portfolio{
     text-align: left;
     font-size: 80px;
-    font-weight: bold;
-    margin-bottom: 4%;
+    margin-bottom: 4.5%;
     padding-top:5%;
     margin-left: 10%;
     color:white;
-}
-
-.background{
-    background-color: #3ba7ff;
-    position: absolute;
-    top: 0px;
-    object-fit:cover;
-    height: 40%;
-    width: 100%;
-    object-position: top;
-    z-index:-2;
-    opacity:0.9;
 }
 
 .heading{

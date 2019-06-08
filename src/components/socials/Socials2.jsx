@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import style from "./Socials.module.css";
-import linkedin from "../../linkedinb.png";
-import github from "../../githubb.png";
+import linkedin from "../../linkedin.png";
+import github from "../../github.png";
 
 export default class Home extends Component {
   render() {

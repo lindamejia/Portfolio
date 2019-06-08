@@ -2,6 +2,7 @@
     height:50px;
     width:auto;
     margin:30px;
+ 
   }
 
   .socials{
@@ -9,4 +10,5 @@
     right: 0;
     top: 20px;
     margin-right:20px;
+    z-index: 1;
   }

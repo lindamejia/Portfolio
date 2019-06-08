@@ -1,5 +1,18 @@
 .App {
   text-align: center;
+ 
+}
+
+.background{
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  object-fit:cover;
+  height: 100%;
+  width: 100%;
+  object-position: top;
+  z-index:-2;
+ 
 }
 
 .App-logo {
@@ -31,6 +44,7 @@
     transform: rotate(360deg);
   }
 }
+
 
 @font-face {
   font-family: 'ubuntu';

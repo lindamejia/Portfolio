@@ -1,65 +1,35 @@
 .heading{
     text-align: left;
     font-size: 80px;
-    font-weight: bold;
     margin-bottom: 4%;
-    padding-top:5%
+    padding-top:5%;
+    color: white;
 }
 
-.background{
+.image{
     position: absolute;
-    right: 10%;
+    right: 20%;
     top: 18%;
     z-index: -2;
     object-fit:cover;
-    height: 80%;
-    width: 30%;
-    opacity: 0.8;
+    height: 400px;
+    width: auto;
+    opacity: 0.75;
     object-position: top;
-}
-
-.background:hover {  
-    animation-name: floating;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    
 }
 
 
 .p{
   font-size: 18px; 
-  background: #3ba7ff;
-  color: white;
+  background: white;
   padding: 20px;
   padding-right: 20px;
   padding-left: 20px;
-  /* margin-left: 50%;
-  margin-right: 50%; */
   opacity:0.92;
   text-align: center;
-margin-bottom: 5%;
 }
 
-
-.image2{
-    position: absolute;
-    left:5%;
-    top: 0px;
-    z-index: -1;
-    height: 60%;
-    width:auto;
-    margin-top: 30%;
-    margin-left: 5%;
-    object-fit:cover;
-    opacity:0.8;
-}
-
-.image2:hover {  
-    animation-name: floating;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
 
 .p:hover {  
     animation-name: floating;
@@ -74,8 +44,9 @@ margin-bottom: 5%;
 }
 
 .link{
-font-weight: "bold";
-color:white;
+font-weight: bold;
+color:black;
+
 
 }
 
@@ -84,6 +55,10 @@ text-decoration: none;
 background: -webkit-linear-gradient(right, #33ccff, #ff99cc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 
@@ -95,13 +70,10 @@ background: -webkit-linear-gradient(right, #33ccff, #ff99cc);
 
 @media only screen and (max-width: 768px) {
     /* For desktop: */
-  .image2{
+  .image{
       display:none;
   }
 
-  .background{
-    display:none;
-}
   .heading{
       margin-top:10%;
 

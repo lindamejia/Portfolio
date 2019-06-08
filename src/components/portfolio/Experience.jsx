@@ -9,9 +9,9 @@ class Experience extends Component {
   render() {
     return (
       <div>
-        <Container style={{ marginBottom: "3%" }}>
+        <Container style={{ marginBottom: "7.5%", textAlign: "center" }}>
           <Row>
-            <Col className={`col-md-3 col-xs-10 ${style.box}`}>
+            <Col className={` col-xs-10 ${style.box}`}>
               <a href="https://www.crowleystrategy.com/" target="_blank">
                 <img src={crowley} alt="crowley" className={style.image} />
                 <div className={style.overlay}>
@@ -21,7 +21,7 @@ class Experience extends Component {
                 </div>
               </a>
             </Col>
-            <Col className={`col-md-3 col-xs-10 offset-1 ${style.box}`}>
+            <Col className={`col-xs-10  ${style.box}`}>
               <a href="https://outlayr.azurewebsites.net/" target="_blank">
                 <img src={outlayr} alt="outlayr" className={style.image} />
                 <div className={style.overlay}>
@@ -29,8 +29,11 @@ class Experience extends Component {
                 </div>
               </a>
             </Col>
-            <Col className={`col-md-3 col-xs-10 offset-1 ${style.box}`}>
-              <a href="/maca" target="_blank">
+            <Col className={` col-xs-10  ${style.box}`}>
+              <a
+                href="https://upbeat-murdock-9fd893.netlify.com/"
+                target="_blank"
+              >
                 <img src={maca} alt="maca" className={style.image} />
                 <div className={style.overlay}>
                   <div className={style.text}>Maca Media</div>

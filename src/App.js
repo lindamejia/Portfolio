@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import "./App.css";
-import NavBar from "./components/nav/NavBar";
+import NavBar2 from "./components/nav/NavBar2";
 import Socials2 from "./components/socials/Socials2";
 import Home from "./components/home/Home";
 import AboutMe from "./components/aboutMe/AboutMe";
@@ -11,8 +11,8 @@ import Contact from "./components/contact/Contact";
 class App extends Component {
   render() {
     return (
-      <div>
-        <NavBar />
+      <div className="background">
+        <NavBar2 />
         <Socials2 />
 
         <Route exact path="/" render={props => <Home {...props} />} />

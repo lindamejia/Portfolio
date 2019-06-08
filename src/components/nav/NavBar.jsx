@@ -8,16 +8,18 @@ class NavBar extends Component {
       <div>
         <div>
           <nav role="navigation" className={style.nav}>
-            <img src={whiteLogo} alt="Logo" className={style.img} />
+            <a href="/">
+              <img src={whiteLogo} alt="Logo" className={style.img} />
+            </a>
             <div className={style.rotate}>
               <a href="/contact" className={style.navlink}>
                 CONTACT
               </a>
-              <a href="/portfolio" className={style.navlink}>
-                PORTFOLIO
-              </a>
               <a href="/aboutme" className={style.navlink}>
                 ABOUT ME
+              </a>
+              <a href="/portfolio" className={style.navlink}>
+                PORTFOLIO
               </a>
               <a href="/" className={style.navlink}>
                 HOME
@@ -25,7 +27,6 @@ class NavBar extends Component {
             </div>
           </nav>
         </div>
-
       </div>
     );
   }

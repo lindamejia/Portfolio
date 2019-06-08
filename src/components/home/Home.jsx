@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import style from "./Home.module.css";
+import Particles from "react-particles-js";
 
 export default class Home extends Component {
   constructor() {
@@ -16,28 +17,6 @@ export default class Home extends Component {
   componentDidMount() {
     this.getRandomQuote();
   }
-
-  // getRandomQuote = () => {
-  //   fetch(this.END_POINT, {
-  //     // mode: "no-cors",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       "Access-Control-Allow-Origin": "*",
-  //       Accept: "application/json"
-  //     }
-  //   })
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       if (data[0].content) {
-  //         let { quote } = this.state;
-  //         quote.content = data[0].content;
-
-  //         this.setState({ quote });
-  //       } else {
-  //         return console.error("No quote has been found 404");
-  //       }
-  //     });
-  // };
 
   getRandomQuote = () => {
     fetch(this.END_POINT, {
@@ -64,7 +43,21 @@ export default class Home extends Component {
   render() {
     const { content } = this.state.quote;
     return (
-      <div>
+      <div className={style.wrapper}>
+        <Particles
+          className={style.particles}
+          params={{
+            particles: {
+              line_linked: {
+                shadow: {
+                  enable: true,
+                  color: "#3CA9D1",
+                  blur: 5
+                }
+              }
+            }
+          }}
+        />
         <div className={style.heading}>
           <h1 className={style.title1}>Hi,</h1>
           <br />

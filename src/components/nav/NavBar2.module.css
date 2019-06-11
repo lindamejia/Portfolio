@@ -53,6 +53,11 @@ z-index: 10;
         -webkit-transform: none;;
         -ms-transform: none;
         transform:none;
+        color:White;
+    }
+
+    .img{
+        margin-left:10%;
     }
   }
 
